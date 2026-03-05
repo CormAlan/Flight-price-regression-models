@@ -1,7 +1,7 @@
 # Flight price regression models
 
 ## Datainhämtning
-Filerna `serpapi_flights_scan.py` och `hubs_builder.py`, samt deras körskript `run_13day_sampling.ps1`, används endast för datainsamling och anropar SerpAPI för att hämta flygdata för det kommande året. Du får gärna använda dem också. Körscripten väljer dagar med 13 dagars mellanrum och anropar API:et för alla valda toppflyplatser under de dagarna. Jag valde att scanna efter flyg från ARN till asiens topp 9 flygplatser med 14 dagars mellanrum. Det här var ett misstag eftersom 7 är kongruent med 14 och alla skanningar blev på samma veckodag. Därmed kunde jag inte använda veckodagar som en feature.
+Filerna `serpapi_flights_scan.py` och `hubs_builder.py`, samt deras körskript `run_13day_sampling.ps1`, används endast för datainsamling och anropar SerpAPI för att hämta flygdata för det kommande året. Du får gärna använda dem också. Körscripten väljer dagar med 13 dagars mellanrum och anropar API:et för alla valda toppflyplatser under de dagarna. Jag valde att scanna efter flyg från ARN till asiens topp 9 flygplatser med 14 dagars mellanrum. Det här var ett misstag eftersom 14 är kongruent med 7 och alla skanningar blev på samma veckodag. Därmed kunde jag inte använda veckodagar som en feature och alla mina API credits var då brukade.
 
 ## Regressioner
 Jag har en mindre fil med en linjär regression (som inte alls gav en så bar korrelation) och en fil med Random Forest (som faktiskt fungerade).
