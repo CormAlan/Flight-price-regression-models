@@ -92,8 +92,8 @@ plt.show()
 ```
 ![Prediction vs reality med idell linje och 10 bästa dealsen inkluderade (Random forest)](plots/Plot.png)
 
-## Topp 10 bästa deals# Topp 10 deals
-```
+## Topp 10 bästa deals och linje
+```python
 top_n = 10
 top_deals = df.nlargest(top_n, "price_difference")
 
