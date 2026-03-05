@@ -90,4 +90,6 @@ plt.ylabel("Predicted price")
 plt.title("Prediction vs Reality")
 plt.show()
 ```
-![Prediction vs reality med idell linje och 10 bästa dealsen inkluderade (Random forest)](https://example.com/image.png)
+![Prediction vs reality med idell linje och 10 bästa dealsen inkluderade (Random forest)](plots/plot.png)
+
+## Topp 10 bästa deals
