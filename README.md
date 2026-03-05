@@ -90,6 +90,18 @@ plt.ylabel("Predicted price")
 plt.title("Prediction vs Reality")
 plt.show()
 ```
-![Prediction vs reality med idell linje och 10 bästa dealsen inkluderade (Random forest)](plots/plot.png)
+![Prediction vs reality med idell linje och 10 bästa dealsen inkluderade (Random forest)](plots/Plot.png)
 
-## Topp 10 bästa deals
+## Topp 10 bästa deals# Topp 10 deals
+```
+top_n = 10
+top_deals = df.nlargest(top_n, "price_difference")
+
+plt.figure()
+plt.scatter(df["price"], df["predicted_price"], alpha=0.35)
+
+# y = x (perfekt prediction) linje
+lo = min(df["price"].min(), df["predicted_price"].min())
+hi = max(df["price"].max(), df["predicted_price"].max())
+plt.plot([lo, hi], [lo, hi])
+```
