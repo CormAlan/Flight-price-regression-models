@@ -26,9 +26,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 (80% till träning, 20% för testning)
 ### MEA för att evaluera
 Mean absolute error:
-$$
-MAE = \frac{1}{n}\sum |y - \hat{y}|
-$$
+$$MAE = \frac{1}{n}\sum |y - \hat{y}|$$
 ```python
 from sklearn.metrics import mean_absolute_error
 
